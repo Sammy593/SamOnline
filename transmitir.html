@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transmitir</title>
+    <script src="https://unpkg.com/webcam-easy@1.0.5/dist/webcam-easy.min.js"></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        border: 0;
+        font-family: "League Gothic", sans-serif;
+        overflow: hidden;
+      }
+      header {
+        box-sizing: border-box;
+        text-align: center;
+        height: 80px;
+        background: rgb(235, 255, 250);
+        padding-top: 15px;
+      }
+      header span {
+        font-family: monospace;
+        font-size: 45px;
+        font-weight: 600;
+      }
+      main {
+        width: 100%;
+        background-image: url("/img/img2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 20px;
+      }
+
+      main a {
+        text-decoration: none;
+        background: white;
+        padding: 10px;
+        text-align: center;
+        padding-top: 10px;
+        height: 30px;
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>SamOnline</span>
+    </header>
+    <main>
+      <a href="/index.html"> Regresar a pagina principal</a>
+      <h1>Usa tu camara</h1>
+      <video
+        id="webCam"
+        autoplay
+        playsinlne
+        width="1180px"
+        height="650px"
+      ></video>
+      <canvas id="canvas"></canvas>
+    </main>
+
+    <script>
+      const webCamElement = document.getElementById("webCam");
+      const canvas = document.getElementById("canvas");
+      const webcam = new Webcam(webCamElement, "user", canvas);
+
+      webcam.start();
+    </script>
+  </body>
+</html>

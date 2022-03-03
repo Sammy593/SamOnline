@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body,
+html{
+    margin: 0;
+    border: 0;
+    font-family: 'League Gothic', sans-serif;
+}
+header{
+    box-sizing: border-box;
+    text-align: center;
+    height: 80px;
+    background: rgb(235, 255, 250);
+    padding-top: 15px;
+}
+header span{
+    font-family:monospace;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+main{
+    padding: 25px;
+    background-image: url('/img/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 96%;
+    padding-bottom: 130px;
+}
+
+main .a{
+    text-decoration: none;
+    background: white;
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    height: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.ver{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: black 2px 2px 15px;
+    width: 19%;
+    background: rgba(255, 255, 255, 0.616);
+}
+.videos img{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    object-position: 0px  -2px;
+}
+
+.videos span{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.vid{
+    text-decoration: none;
+    color: white;
+    background: purple;
+    height: 30px;
+    padding-top: 5px;
+    font-size: 23px;
+}
+
+.vid:hover{
+    color: black;
+    background: white;
+}

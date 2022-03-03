@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+body,
+html{
+    margin: 0;
+    border: 0;
+    font-family: 'League Gothic', sans-serif;
+}
+
+canvas { width: 100px; height: 200px }
+
+header{
+    box-sizing: border-box;
+    text-align: center;
+    height: 80px;
+    background: rgb(235, 255, 250);
+    padding-top: 15px;
+}
+header span{
+    font-family:monospace;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+main{
+    padding: 30px;
+    background-image: url('/img/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.div1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    padding: 2.5%;
+    box-shadow: rgba(0, 0, 0, 0.747) 2px 4px 18px;
+    background: rgba(255, 255, 255, 0.473);
+}
+
+#s1{
+   font-weight: 600;
+   text-align: center;
+   font-size: 40px;
+}
+#s2{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+#s3{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.b1, .b2, .b1a{
+    border: none;
+    background: rgba(120, 209, 182, 0.603);
+    font-weight: 700;
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+    height: 80px;
+}
+
+.b1, .b2{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+.b1a{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.b1a:hover,
+.b1:hover,
+.b2:hover{
+    background: rgb(120, 209, 182);
+}
+.div2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    padding: 2.5%;
+    box-shadow: rgba(0, 0, 0, 0.747) 2px 4px 18px;
+    background: rgba(255, 255, 255, 0.473);
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.section2 span{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.tresd{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.tresd2{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.escenas{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+}

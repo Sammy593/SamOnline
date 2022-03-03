@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+    <link rel="stylesheet" href="/styles/series.css">
+</head>
+<body>
+    <header>
+        <span>SamOnline</span>
+      </header>
+
+      <main>
+        <a href="./videos.html"> Regresar a catalogo</a>
+          <section class="video">
+         
+              <button onclick="capUno()" id="b1">Capitulo 1</button>
+              <button onclick="capDos()" id="b2">Capitulo 2</button>
+              <div>
+                  <video id="reproductor" controls></video>
+              </div>
+          </section>
+      </main>
+
+      <script>
+          let reproductor = document.getElementById('reproductor');
+          function capUno(){
+              reproductor.setAttribute('src', '/videos/videos_series/Avatar/(MGanime.com) Korra capitulo 01.mp4');
+          }
+          function capDos(){
+              reproductor.setAttribute('src', '/videos/videos_series/Avatar/(MGanime.com) Korra capitulo 02.mp4');
+          }
+      </script>
+</body>
+</html>

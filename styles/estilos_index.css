@@ -23,7 +23,7 @@ header span{
 
 main{
     padding: 30px;
-    background-image: url('./img/img2.jpg');
+    background-image: url('../img/img2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 680px;
